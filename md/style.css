@@ -1,0 +1,106 @@
+/* === Modo oscuro: fondo verde obscuro / texto blanco === */
+:root {
+    --bg-green: #062f26;
+    --card-bg: rgba(255,255,255,0.04);
+    --card-border: rgba(255,255,255,0.06);
+    --muted: rgba(255,255,255,0.7);
+    --accent: #1fb47a;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-green);
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  main { flex: 1 0 auto; }
+  .container {
+    margin-top: 6vh;
+    max-width: 420px;
+  }
+  
+  /* Navbar */
+  nav {
+    background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.06)), var(--bg-green);
+    box-shadow: none;
+  }
+  .nav-wrapper .brand-logo {
+    color: #ffffff !important;
+    font-weight: 600;
+  }
+  nav .nav-wrapper a {
+    color: #ffffff !important;
+  }
+  
+  /* Cards */
+  .card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border);
+    color: #fff;
+  }
+  .card .card-content { padding: 24px; }
+  
+  .profile-card { display: none; }
+  
+  /* Inputs */
+  .input-field input {
+    color: #ffffff;
+  }
+  .input-field input:focus {
+    border-bottom: 1px solid var(--accent) !important;
+    box-shadow: 0 1px 0 0 var(--accent) !important;
+  }
+  .input-field label {
+    color: rgba(255,255,255,0.8);
+  }
+  .input-field label.active {
+    color: var(--accent) !important;
+  }
+  .input-field .prefix {
+    color: rgba(255,255,255,0.9);
+  }
+  .helper-text {
+    color: var(--muted) !important;
+  }
+  
+  /* Botones */
+  .btn {
+    background: linear-gradient(180deg,var(--accent), #0f8f64) !important;
+    color: #fff;
+  }
+  .btn-flat {
+    color: rgba(255,255,255,0.9) !important;
+  }
+  
+  /* Avatar */
+  .circle {
+    box-shadow: none;
+    background: linear-gradient(180deg,#0b6b4f, #074f3f);
+  }
+  
+  /* Animación */
+  .fade-in { animation: fadeIn 300ms ease forwards; opacity: 0; }
+  @keyframes fadeIn { to { opacity: 1; } }
+  
+  /* Toast */
+  .toast { background: rgba(0,0,0,0.6); color: #fff; }
+  
+  /* Links y texto */
+  a { color: #c8f1df; }
+  p, span, label { color: #fff; }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .container { margin-top: 4vh; padding: 0 12px; }
+  }
+  

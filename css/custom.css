@@ -1,0 +1,223 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #f0f8ff; /* Fondo azul claro */
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 20px 0 0 0;
+    background: #1976d2; /* Azul medio */
+    text-align: center;
+    color: white;
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#logo {
+    width: 100px;   /* ajusta el ancho */
+    height: auto;   /* mantiene proporción */
+    display: block;
+    margin: 0 auto; /* centra la imagen si quieres */
+}
+
+
+ul {
+    list-style: none;
+}
+#hero {
+    background-image: url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+}
+#encabezado {
+    margin: 30px 0;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    border: 2px solid #1976d2;
+    border-radius: 10px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
+.barra {
+    padding: 20px 0;
+    background: #0d47a1; /* Azul oscuro */
+    background: -moz-linear-gradient(left, #0d47a1 0%, #1976d2 100%);
+    background: -webkit-linear-gradient(left, #0d47a1 0%, #1976d2 100%);
+    background: linear-gradient(to right, #0d47a1 0%, #1976d2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d47a1', endColorstr='#1976d2',GradientType=1 );
+}
+
+.barra p {
+    margin:0;
+    color: white;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+.agregar-carrito {
+    margin:10px 0;
+    background-color: #2196f3; /* Azul vivo */
+    color: rgb(14, 14, 14);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.agregar-carrito:hover {
+    background-color: #0d47a1; /* Azul más oscuro en hover */
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #1976d2;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+    color: #0d47a1;
+}
+
+
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #1976d2;
+    padding-top: 40px;   
+    background-color: #0d47a1;
+    color: white;
+}
+.footer .menu a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #bbdefb; /* Azul claro */
+}
+.footer .menu a:hover {
+    color: white;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #1e3a8a; /* Azul fuerte */
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    color: #ffffff; /* Texto blanco */
+}
